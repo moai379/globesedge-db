@@ -20,7 +20,7 @@ jobs:
           node-version: 18
 
       - name: Generate RSS
-        run: node scripts/generate-rss.js
+        run: node scripts/generaterss.js
 
       - name: Commit RSS
         run: |
