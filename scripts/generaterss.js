@@ -15,8 +15,8 @@ const items = postsData.posts
     return `
     <item>
       <title>${escape(post.title)}</title>
-      <link>${SITE_URL}/#${post.id}</link>
-      <guid>${post.id}</guid>
+      <link>${SITE_URL}/#${encodeURIComponent(post.id)}</link>
+      <guid isPermaLink="false">${post.id}</guid>
       <pubDate>${pubDate}</pubDate>
       <description>${escape(post.description || post.title)}</description>
     </item>`;
