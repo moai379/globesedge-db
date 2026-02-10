@@ -26,6 +26,7 @@ const items = postsData.posts
 const rss = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
   <channel>
+    <atom:link href="https://raw.githubusercontent.com/moai379/globesedge-db/main/rss.xml" rel="self" type="application/rss+xml"/>
     <title>${FEED_TITLE}</title>
     <link>${SITE_URL}</link>
     <description>${FEED_DESCRIPTION}</description>
